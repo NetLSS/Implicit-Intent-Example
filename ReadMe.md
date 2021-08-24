@@ -1,3 +1,8 @@
+# 암시적 인텐트 데모 프로젝트
+
+## 인텐트 필터 구성하기
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lilcode.example.intentfilterwebview">
@@ -20,9 +25,11 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <category android:name="android.intent.category.DEFAULT"/>
 <!--                <data android:scheme="http" android:host="whyprogrammer.tistory.com"/>-->
-                <data android:scheme="http" android:host="*"/>
+                <data android:scheme="http" android:host="*"/> 
+<!--                모든 URL을 지원하기 (*)-->
             </intent-filter>
         </activity>
     </application>
 
 </manifest>
+```
